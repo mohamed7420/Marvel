@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharacterDetailsViewController" customModule="Marvel" customModuleProvider="target">
+            <connections>
+                <outlet property="containerStackView" destination="mXh-pA-5Wg" id="x6S-ib-F9V"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mnR-a7-r7O">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="852" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mXh-pA-5Wg">
+                            <rect key="frame" x="0.0" y="20" width="393" height="852"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="mXh-pA-5Wg" secondAttribute="bottom" id="7G5-B3-Dx7"/>
+                        <constraint firstItem="mXh-pA-5Wg" firstAttribute="width" secondItem="PFf-fu-AIZ" secondAttribute="width" id="S5q-ha-3zv"/>
+                        <constraint firstItem="mXh-pA-5Wg" firstAttribute="top" secondItem="mnR-a7-r7O" secondAttribute="top" constant="20" id="d6M-5r-Whc"/>
+                        <constraint firstItem="mXh-pA-5Wg" firstAttribute="leading" secondItem="PFf-fu-AIZ" secondAttribute="leading" id="iSG-cP-DWD"/>
+                        <constraint firstItem="mXh-pA-5Wg" firstAttribute="top" secondItem="PFf-fu-AIZ" secondAttribute="top" id="nix-3b-8xo"/>
+                        <constraint firstAttribute="trailing" secondItem="mXh-pA-5Wg" secondAttribute="trailing" id="wZf-bk-rNO"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="Hyu-33-lHC"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="PFf-fu-AIZ"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="mnR-a7-r7O" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LgD-bH-nWx"/>
+                <constraint firstItem="mnR-a7-r7O" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Tzv-Fa-CfO"/>
+                <constraint firstAttribute="trailing" secondItem="mnR-a7-r7O" secondAttribute="trailing" id="Wjb-5x-7iD"/>
+                <constraint firstAttribute="bottom" secondItem="mnR-a7-r7O" secondAttribute="bottom" id="Yff-U6-qbX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="12" y="-11"/>
+        </view>
+    </objects>
+</document>
